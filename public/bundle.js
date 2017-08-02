@@ -25057,6 +25057,8 @@
 	var axios = __webpack_require__(222);
 
 	var OPEN_WEATHER_MAP_URL = 'http://api.openweathermap.org/data/2.5/weather?appid=108661289cebe38a962ea90d145e9af3&units=metric';
+	//change your API key on openweathermap in order for it to work.
+
 
 	module.exports = {
 	    getTemp: function getTemp(location) {
@@ -26648,9 +26650,18 @@
 
 	var Examples = function Examples(props) {
 	    return React.createElement(
-	        'h3',
+	        'div',
 	        null,
-	        'Examples Component'
+	        React.createElement(
+	            'h3',
+	            null,
+	            'Examples'
+	        ),
+	        React.createElement(
+	            'p',
+	            null,
+	            'Welcome to examples page!'
+	        )
 	    );
 	};
 
